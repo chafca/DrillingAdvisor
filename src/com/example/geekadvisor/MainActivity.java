@@ -31,6 +31,7 @@ public class MainActivity extends FragmentActivity implements
 	AppSectionsPagerAdapter mAppSectionsPagerAdapter;
 	ViewPager mViewPager;
 	static String title;
+	int a;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
