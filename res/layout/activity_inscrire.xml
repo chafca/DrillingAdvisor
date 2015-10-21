@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BurlyWood"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.InscrireActivity" >
+
+   <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:orientation="vertical" >
+		        
+		        <ImageView
+		            android:id="@+id/imageView1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center"
+		            android:src="@drawable/img_login" />
+		
+		    </LinearLayout>
+		        
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="0.26"
+		        android:paddingTop="15dp"
+		        android:layout_margin="10dp"
+		        android:orientation="vertical" >
+		
+		        <EditText
+		            android:id="@+id/txtemail"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:hint="Email"
+		            android:background="@android:color/white"
+		            android:layout_marginTop="10dp"
+		            android:padding="10dp"
+		            android:inputType="textEmailAddress"
+		            android:ems="10" />
+		
+		        <EditText
+		            android:id="@+id/txtpassword"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:hint="Mot de passe"
+		            android:background="@android:color/white"
+		            android:layout_marginTop="10dp"
+		            android:padding="10dp"
+		            android:inputType="textPassword"
+		            android:ems="10" />
+		
+		        <EditText
+		            android:id="@+id/txtNom"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:hint="Nom"
+		            android:background="@android:color/white"
+		            android:layout_marginTop="10dp"
+		            android:padding="10dp"
+		            android:ems="10" />
+		
+		        <EditText
+		            android:id="@+id/txtPrenom"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:hint="Prenom"
+		            android:background="@android:color/white"
+		            android:layout_marginTop="10dp"
+		            android:padding="10dp"
+		            android:ems="10" />
+		
+		        <Button
+		            android:id="@+id/btninscrire1"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="10dp"
+		            android:background="@android:color/white"
+		            android:onClick="enregistrer"
+		            android:text="s&apos;inscrire"
+		            android:textColor="@android:color/black" />
+		 	
+		    </LinearLayout>
+
+</LinearLayout>

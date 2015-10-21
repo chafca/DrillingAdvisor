@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+	android:background="@color/BurlyWood"
+    tools:context="com.example.geekadvisor.DescriptionUEActivity" >
+
+	<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/corners"
+            android:orientation="vertical" >
+	            
+	   			<TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Informations sur les contenus de cette UE :" />
+	   			
+	    		<View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="#A4A4A4" >
+                </View>
+                
+	    		<TextView
+                    android:id="@+id/tvContenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"/>
+				
+				<View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="#A4A4A4" >
+                </View>
+                
+	            <Button
+	                android:id="@+id/btnVoirCours"
+	                style="?android:attr/buttonStyleSmall"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:onClick="voirCours"
+	                android:text="Voir Les Cours" />
+	            
+	            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="#A4A4A4" >
+                </View>
+                
+	            <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="Les cours les mieux notés:" />
+                
+	            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="0dp"
+                    android:background="#A4A4A4" >
+                </View>
+                
+	             <ListView
+		            android:id="@+id/listViewAvis"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="8dp"
+		            android:background="#fff" >
+		        </ListView>
+
+	</LinearLayout>
+
+</LinearLayout>
